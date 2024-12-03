@@ -171,27 +171,20 @@
 <h4 class="wp-block-heading"><code><span>範例:</span></code><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/132d52dffb7589ad64a9c535c8ea0d810ba81e91/w12-06.py">環遊世界</a></h4>
 <p></p>
 <p>07</p>
-<p><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-1.py">感官</a></p>
-<p><strong>1.索引修改</strong>：使用單一索引修改清單中的某個元素（如<span> </span><code>senses[1]</code>）</p>
-<p><strong>2.分片替換</strong>：用切片語法（如<span> </span><code>senses[3:5]</code>）修改一段區間的元素</p>
-<p><strong>3.帶步長的切片修改</strong>：通過步長語法（如<span> </span><code>senses[0:3:2]</code>）選擇非連續的元素進行替換</p>
-<p><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-2.py">行星</a></p>
-<p><code>1.planets[:5]</code>：取出索引 0 到 4 的元素（<code>["Mercury", "Mars", "Venus", "Earth", "Neptune"]</code>）</p>
-<p>2.<code>["Uranus", "Saturn"]</code>：新增的行星</p>
-<p>3.<code>planets[5:]</code>：取出索引 5 之後的元素（<code>["Jupiter"]</code>）</p>
-<p></p>
-<p><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-3.py">房子</a></p>
-<p><strong><code>1.del</code> 語句</strong>：</p>
-<p>用於刪除清單中的元素，或刪除整個清單</p>
-<p>可以使用單一索引（如 <code>del house[1]</code>）刪除特定位置的元素</p>
-<p>可以使用切片語法（如 <code>del house[4:6]</code> 或 <code>del house[::2]</code>）刪除多個元素</p>
-<p>如果直接對變數使用 <code>del</code>（如 <code>del house</code>），會刪除變數本身</p>
-<p><strong>2.刪除整個清單後的錯誤</strong>：</p>
-<p>執行 <code>del house</code> 後，變數 <code>house</code> 不再存在，任何對它的操作都會引發 <code>NameError</code></p>
-<p>3.<strong>刪除時的索引變化</strong>：</p>
-<p>每次刪除操作後，清單的長度和索引會重新排列。後續操作需注意索引變化</p>
-<p></p>
-<p><strong></strong></p>
+<p><strong>索引修改</strong>：使用單一索引修改清單中的某個元素（如<span> </span><code>senses[1]</code>）</p>
+<p><strong>分片替換</strong>：用切片語法（如<span> </span><code>senses[3:5]</code>）修改一段區間的元素</p>
+<p><strong>帶步長的切片修改</strong>：通過步長語法（如<span> </span><code>senses[0:3:2]</code>）選擇非連續的元素進行替換</p>
+<h4 class="wp-block-heading"><code><span>範例:</span></code><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-1.py">感官</a></h4>
+<p><code>1.[:5]</code>：取出索引 0 到 4 的元素</p>
+<p>2.<code>[5:]</code>：取出索引 5 之後的元素</p>
+<h4 class="wp-block-heading"><code><span>範例:</span></code><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-2.py">行星</a></h4>
+<p><strong><code>del</code> 語句</strong>：</p>
+<p>刪除清單中的元素，或刪除整個清單</p>
+<p>使用單一索引（如 <code>del house[1]</code>）刪除特定位置的元素</p>
+<p>使用切片語法（如 <code>del house[4:6]</code> 或 <code>del house[::2]</code>）刪除多個元素</p>
+<p>直接對變數使用 <code>del</code>（如 <code>del house</code>），會刪除變數本身</p>
+<h4 class="wp-block-heading"><code><span>範例:</span></code><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/2386fa2acc5338cb55f9ad5c76a9b4b2/raw/80fd690299356d2f0f08edc20573dd80da9cdf46/w12-07-3.py">房子</a></h4>
+<p><strong><code></code></strong></p>
 <p></p>
 <p></p><h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
