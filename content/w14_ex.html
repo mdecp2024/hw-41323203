@@ -142,21 +142,8 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w13_hw << <a href='w13_hw.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2<br /><h1>w14_ex</h1>
-<p><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/7e33a7b1ccc2549d7537a500ad513c92/raw/4679200c1abf11b664136c0720641e7510ed5d6f/w14.py">三個圓的塗色</a></p>
-<!-- 導入 brython 程式庫 -->
-<p>
-<script src="./../cmsimde/static/brython.js"></script>
-<script src="./../cmsimde/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
-}
-</script>
-<script type="text/python3">
-from browser import html
+<p><a href="https://mdecp2024.github.io/hw-41323203/content/Brython.html?src=https://gist.githubusercontent.com/41323203/7e33a7b1ccc2549d7537a500ad513c92/raw/6767cfdb408aa2195a4be5f5e0837d9f51159097/w14.py"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">三圓的著色</span></span></a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import html
 from browser import document as doc
 import random
 import math
@@ -171,7 +158,7 @@ def initialize_canvas(canvas_width=400, canvas_height=400, id="brython_div1"):
     canvas = html.CANVAS(width=canvas_width, height=canvas_height)
     # 將創建的 canvas 元素添加到指定的 HTML div 元素中
     brython_div = doc[id]  # 獲取指定 id 的 div 元素
-    brython_div <= canvas  # 將 canvas 插入到該 div 中
+    brython_div &lt;= canvas  # 將 canvas 插入到該 div 中
      
     # 獲取 canvas 的 2D 繪圖上下文，這是進行繪圖的主要接口
     ctx = canvas.getContext("2d")
@@ -196,8 +183,8 @@ def is_point_in_circle(px, py, cx, cy, r):
     判斷一個點 (px, py) 是否位於圓 (cx, cy, r) 內。
     (cx, cy) 為圓心坐標，r 為圓的半徑。
     """
-    # 使用圓的方程 (px - cx)² + (py - cy)² <= r² 判斷點是否在圓內
-    return (px - cx) ** 2 + (py - cy) ** 2 <= r ** 2
+    # 使用圓的方程 (px - cx)² + (py - cy)² &lt;= r² 判斷點是否在圓內
+    return (px - cx) ** 2 + (py - cy) ** 2 &lt;= r ** 2
 
 # 使用者設定的三個圓心座標和半徑，並進行掃描線填充
 def draw_circles(x1, y1, r1, x2, y2, r2, x3, y3, r3):
@@ -281,8 +268,7 @@ x3, y3, r3 = 200, 100, 100  # 圓3：圓心 (200, 100)，半徑 100
 
 # 呼叫畫圓函式，並繪製三個圓
 draw_circles(x1, y1, r1, x2, y2, r2, x3, y3, r3)
-</script>
-</p><br />w13_hw << <a href='w13_hw.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
+</pre><br />w13_hw << <a href='w13_hw.html'>Previous</a> <a href='HW 2.html'>Next</a> >> HW 2</div>
         
     <!-- footer -->
       <div class="container">
